@@ -78,6 +78,7 @@ def all_supplies_in_holidays(holiday_hash)
     season.each do |holiday|
       holiday_string += "#{holiday}: "
       holiday.each do |supply|
+        binding.pry
         holiday_string += supply.join(" , ")
       end
     end
