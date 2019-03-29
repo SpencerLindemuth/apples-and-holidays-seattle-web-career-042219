@@ -74,10 +74,11 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_string = ""
   holiday_hash.each do |season|
-    holiday_string += "#{season}: \n"
-    binding.pry
+    this_season = season.to_s
+    this_season = this_season.capitalize
+    holiday_string += "#{this_season}: \n"
     season.each do |holiday|
-      holiday_string += "#{holiday[0]}: "
+      holiday_string += " #{holiday[0]}: "
       holiday_string += holiday[1]
     end
   end
