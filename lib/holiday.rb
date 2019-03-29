@@ -72,18 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  holiday_string = ""
-  holiday_hash.each do |season|
-    this_season = season.to_s
-    this_season = this_season.capitalize
-    holiday_string += "#{this_season}: \n"
-    binding.pry
-    season.each do |holiday|
-      holiday_string += " #{holiday[0]}: "
-      holiday_string += holiday[1]
-    end
-  end
-  puts holiday_string
+  Pry::ColorPrinter.pp(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
