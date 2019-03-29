@@ -75,6 +75,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_string = ""
   holiday_hash.each do |season|
     holiday_string += "#{season}: \n"
+    binding.pry
     season.each do |holiday|
       holiday_string += "#{holiday[0]}: "
       holiday_string += holiday[1]
