@@ -28,6 +28,7 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   christmas = holiday_hash[:winter]
   christmas.each do |holiday|
     holiday.push("Balloons")
+    binding.pry
   end
   holiday_hash
 
