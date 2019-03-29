@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday.each do |supply|
         holiday_string += supply.join(" , ")
       end
-    end  
+    end
   end
 end
 
