@@ -72,7 +72,13 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  Pry::ColorPrinter.pp(holiday_hash)
+  holiday_hash.each do |season, holiday|
+    puts "#{season.capitalize}: \n"
+    holiday.each do |holiday, supplies|
+      puts "#{holiday.capitalize}: "
+      
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
