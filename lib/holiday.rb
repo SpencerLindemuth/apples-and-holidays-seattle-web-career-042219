@@ -28,7 +28,6 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   winter = holiday_hash[:winter]
   winter.each do |holiday|
     holiday.push(supply)
-      end
   end
 holiday_hash
 
